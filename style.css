@@ -1,0 +1,180 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f7f7;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:#ff4d4d;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+.hero{
+height:90vh;
+background:url("images/child1.jpg") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:15px;
+text-align:center;
+color:white;
+animation:fadeIn 1.5s ease;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#ff4d4d;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+.about,
+.gallery,
+.donate,
+.contact{
+padding:70px 10%;
+text-align:center;
+}
+
+.about h2,
+.gallery h2,
+.donate h2,
+.contact h2{
+margin-bottom:20px;
+font-size:40px;
+color:#333;
+}
+
+.gallery-box{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.gallery-box img{
+width:320px;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+}
+
+.gallery-box img:hover{
+transform:scale(1.05);
+}
+
+.donate{
+background:#fff0f0;
+}
+
+.qr{
+width:250px;
+margin:20px 0;
+}
+
+.donation-info{
+background:white;
+padding:25px;
+max-width:500px;
+margin:auto;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.donation-info h3{
+margin:15px 0;
+color:#ff4d4d;
+}
+
+.contact{
+background:white;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:10px;
+}
+
+.hero-content h1{
+font-size:35px;
+}
+
+.gallery-box img{
+width:100%;
+}
+}
